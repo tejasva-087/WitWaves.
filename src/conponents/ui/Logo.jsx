@@ -11,10 +11,14 @@ function Logo({ fontSize = 48, className = "", color = "", href = "#" }) {
   const paragraphFontSize = `${fontSize / 3 / 10}rem`;
 
   return (
-    <a href={href} className={`logo ${className}`} aria-label="Home">
+    <a href={href} className={`logo ${className}`}>
       <h3 style={{ fontSize: headingFontSize, color }}>WitWaves.</h3>
       <p
-        style={{ fontSize: paragraphFontSize, color, opacity: color ? 0.8 : 1 }}
+        style={{
+          fontSize: paragraphFontSize,
+          color,
+          opacity: color ? 0.8 : 1,
+        }}
       >
         / Diverse Thoughts, One Ocean
       </p>

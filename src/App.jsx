@@ -5,14 +5,16 @@ function App() {
   return (
     <div>
       {/* href className style fontSize color */}
-      {/* <Logo href="#" fontSize={48} color="red" /> */}
-      <Link href="#">Default</Link>
-      <Link href="#" type="btn">
-        Button
-      </Link>
-
-      <Link href="#" type="border">
-        Border
+      <Logo href="#" fontSize={48} />
+      <Link
+        href="#"
+        fontSize={18}
+        borderColor="red"
+        textColor="red"
+        padding="0.8rem 1.8crem"
+        borderRadius="50rem"
+      >
+        Default
       </Link>
     </div>
   );
