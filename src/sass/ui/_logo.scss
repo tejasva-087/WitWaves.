@@ -1,0 +1,19 @@
+@use "../abstract/extends" as *;
+@use "../abstract/variables" as variables;
+
+.logo {
+  &:link,
+  &:visited {
+    @extend %link;
+    font-family: variables.$font-logo;
+    color: inherit;
+
+    & > h3 {
+      color: variables.$color-black-primary;
+    }
+
+    & > p {
+      color: variables.$color-black-secondary;
+    }
+  }
+}

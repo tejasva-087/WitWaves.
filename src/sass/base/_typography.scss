@@ -1,0 +1,27 @@
+@use "./../abstract/variables" as variables;
+
+// Outfit font
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+// Logo font (Futura)
+@font-face {
+  font-family: "Futura";
+  src: url(variables.$futura-Font-Path) format("woff2");
+}
+
+// *************************
+// *************************
+
+// Reset styles
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: variables.$font-primary;
+  font-size: variables.$font-size-base;
+  font-weight: variables.$font-weight-normal;
+  color: variables.$color-black-secondary;
+  line-height: 1;
+  font-optical-sizing: auto;
+}
